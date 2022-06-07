@@ -12,4 +12,4 @@ RUN go build -o app-server
 
 EXPOSE $PORT
 
-CMD go run .
+CMD ["./app-server"]
