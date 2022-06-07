@@ -1,0 +1,13 @@
+# Addon heroku-postgresql
+# Sekcje build wskazującą na nasz Dockerfile
+
+setup: 
+    addons:
+        - plan: heroku-postgresql
+    config:
+
+build:
+    docker:
+        web: Dockerfile
+    config:
+        PORT: 8080
